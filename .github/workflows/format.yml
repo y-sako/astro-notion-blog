@@ -1,6 +1,7 @@
 name: Format
 
 permissions:
+  checks: write
   contents: write
 
 on:
