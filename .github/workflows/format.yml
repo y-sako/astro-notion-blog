@@ -1,5 +1,8 @@
 name: Format
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
@@ -23,4 +26,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Format by GitHub Actions
-          # token: ${{ secrets.WORKFLOW_TOKEN }}
+          token: ${{ secrets.WORKFLOW_TOKEN }}
